@@ -50,7 +50,7 @@ aTimeSeriesList = []
 for i in range( 0, theNumDataPoint , theNumTimePoint ) :
     aTimeSeriesList.append( theDataList[i:i+theNumTimePoint] ) 
 
-# Calculating intersections of all the combination
+# Calculating intersections of all the combinations of two time courses. 
 
 anXlist = []
 for ( aTimeSeries1 , aTimeSeries2 ) in list( itertools.combinations( aTimeSeriesList , 2 ) ) :
